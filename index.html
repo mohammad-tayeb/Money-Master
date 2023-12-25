@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="font-bold text-2xl text-green-400 text-center"><span>Money Master</span>!!</h1>
+    <div class="flex flex-row">
+        <img class="w-1/2 h-1/3 ms-9 mt-3 drop-shadow-lg opacity-90" src="dollar.jpg" alt="">
+        <section class="flex flex-col mt-3 ms-20 drop-shadow-sm">
+            <h1 class="text-1xl font-semibold text-center">Income</h1>
+            <label class="text-1xl mb-2" for="income">Income:</label>
+            <input id="income" class="border p-2" type="number" placeholder="Income">
+            <h1 class="text-1xl font-semibold text-center mt-3">Expanse</h1>
+            <label class="text-1xl mt-1 mb-2" for="income">Food:</label>
+            <input id="food" class="border p-2" type="number" placeholder="Food">
+            <label class="text-1xl mt-1 mb-2" for="income">Rent:</label>
+            <input id="rent" class="border p-2" type="number" placeholder="Rent">
+            <label class="text-1xl mt-1 mb-2" for="income">Clothes:</label>
+            <input id="clothes" class="border p-2" type="number" placeholder="Clothes">
+            <button id="calculate"
+                class="bg-green-400 h-8 w-28 rounded-md text-white font-bold mt-5 text-1xl">Calculate</button>
+            <h1 class="text-center mt-5 font-semibold">Total Expanse: $<span id="total-expanse">00</span></h1>
+            <h1 class="text-center font-semibold">Balances: $<span id="balance">00</span></h1>
+            <div class="flex mt-12">
+                <h1 class="text-1xl inline mx-3">Save:</h1>
+                <input id="save" class="border p-1 inline" type="number">
+                <h1 class="text-1xl inline mx-3">%</h1>
+                <button id="btn-save"
+                    class="bg-green-400 h-8 w-24 rounded-md text-white font-bold text-1xl">Save</button>
+            </div>
+            <h1 class="text-center mt-2 font-semibold">Savings: $<span id="savings">00</span></h1>
+            <h1 class="text-center font-semibold mb-8">Rem Balance: $<span id="rem-balance">00</span></h1>
+        </section>
+    </div>
+
+    <script src="js/calculate.js"></script>
+</body>
+
+</html>
